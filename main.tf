@@ -28,7 +28,7 @@ data "vcd_catalog" "fetch_vcd_catalog" {
 }
 
 data "vcd_catalog_vapp_template" "vcd_catalog" {
-  org        = var.org
+  org        = var.vcd_org
   catalog_id = var.vcd_catalog_id
   name       = var.vapp_template_name
 }

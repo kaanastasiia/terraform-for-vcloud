@@ -54,10 +54,6 @@ resource "vcd_vapp_vm" "postgres_primary" {
   memory = 4096
   cpus   = 2
 
-  guest_properties = {
-    "guest.hostname" = "postgres_primary"
-  }
-
   network {
     type               = "org"
     name               = var.network_name
@@ -82,10 +78,6 @@ resource "vcd_vapp_vm" "postgres_standby" {
   vapp_template_id = var.vapp_template_id
   memory = 4096
   cpus   = 2
-
-  guest_properties = {
-    "guest.hostname" = "postgres_standby"
-  }
 
   network {
     type               = "org"

@@ -10,10 +10,6 @@ variable "vcd_max_retry_timeout" {
 
 variable "vcd_allow_unverified_ssl" {}
 
-variable "org" {
-  type = string
-}
-
 variable "vcd_catalog_name" {
   type = string
 }
